@@ -1,0 +1,133 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+
+    
+}
+body {
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Poppins';
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slide 14s infinite;
+}
+
+.header{
+  display: grid;
+  place-items: center;
+}
+
+.header .logo{
+  margin-top: 0; 
+  margin-bottom: 2%;
+}
+.header h1{
+    
+    text-align: center;
+    font-size: 53px;
+    color: rgb(245, 245, 245);
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    margin-bottom: 3%;
+}
+.header hr {
+    margin: 5px;
+    border: none;
+    height: 3px;
+    width: 100px;
+    background-color: beige;
+}
+.header h3{
+    margin-top: 5%;
+    font-size: 15px;
+    color: rgb(224, 224, 224);
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    
+}
+h5{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: bold;
+}
+h6{
+  margin:5px;
+  color: white;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.header .button {
+    margin-top: 12%;
+    padding-right: 15px;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid rgb(192, 113, 48);
+    border-radius: 30px;
+    box-shadow: rgb(192, 113, 48) 4px 4px 0 0;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: 0.5s;
+  }
+  
+  .header .button:hover {
+    background-color: rgb(192, 113, 48);;
+    color: #ffffff;
+    
+  }
+  
+  .header .button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+
+  @keyframes slide{
+    25%{
+      background-image: url('../images/background.png') ;
+    }
+    50%{
+      background-image: url('../images/background2.png') ;
+    }
+    75%{
+      background-image: url('../images/background3.png') ;
+    }
+    100%{
+      background-image: url('../images/background4.png') ;
+    }
+    1%{
+      background-image: url('../images/background.png') ;
+      }
+    }
+  @media (min-width: 768px) {
+    .header .button{
+      min-width: 120px;
+      padding: 0 25px;
+    }
+
+  }
